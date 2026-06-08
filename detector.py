@@ -4,7 +4,7 @@ from google import genai
 
 
 # Only run this block for Gemini Developer API
-client = genai.Client()
+# client = genai.Client()
 
 # ──────────────────────────────────────────
 # PART A: Rule-Based Scorer (No AI needed)
@@ -81,10 +81,10 @@ def ai_analysis(email_text):
     - [reason 3]
     RECOMMENDATION: [What should the user do?]"""
 
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt,
-    )
+    # response = client.models.generate_content(
+    #    model='gemini-2.5-flash',
+    #    contents=prompt,
+    # )
     return response.text
 
 # ──────────────────────────────────────────
